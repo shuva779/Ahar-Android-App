@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="User Type"
+            android:textColor="@color/dark_blue"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_margin="25dp"
+            android:paddingLeft="5dp"/>
+        <Spinner
+            android:id="@+id/userinputlogin"
+            android:layout_width="match_parent"
+            android:background="@drawable/checkback"
+            android:layout_height="52dp"
+            android:paddingStart="12dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="gravity"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:fontFamily="@font/roboto"
+                android:background="@android:color/transparent"
+                app:backgroundTint="@null"
+                android:clickable="true"
+                android:layout_alignParentEnd="true"
+                android:textAllCaps="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

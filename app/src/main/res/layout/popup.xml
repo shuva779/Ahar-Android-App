@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Forgot Password"
+            android:textColor="@color/dark_blue"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_margin="25dp"
+            android:paddingLeft="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/cross"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/cross_b"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_password_msg"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/dark_blue"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_password_msg1"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/darkpurple"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            app:hintTextColor="@color/colorPrimary"
+            android:hint="Email or Phone">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailforgot"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:paddingStart="10dp"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/dark_blue"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+            <Button
+                android:id="@+id/forgot_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:fontFamily="@font/roboto"
+                android:background="@android:color/transparent"
+                app:backgroundTint="@null"
+                android:clickable="true"
+                android:layout_alignParentEnd="true"
+                android:textAllCaps="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

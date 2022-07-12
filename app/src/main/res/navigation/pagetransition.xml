@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/resHomeFragment">
+
+    <fragment
+        android:id="@+id/resHomeFragment"
+        android:name="com.example.ahar.Fragment.RestaurantHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_restaurant_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_donateFragment"
+            app:destination="@id/donatefragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_chatFragment"
+            app:destination="@id/chatfragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/donatefragment"
+        android:name="com.example.ahar.Fragment.DonateFragment"
+        android:label="First Fragment"
+        tools:layout="@layout/fragment_donate" >
+        <action
+            android:id="@+id/action_firstFragment_to_homeFragment"
+            app:destination="@id/resHomeFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatfragment"
+        android:name="com.example.ahar.Fragment.ChatFragment"
+        android:label="Second Fragment"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_secondFragment_to_homeFragment"
+            app:destination="@id/resHomeFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.ahar.Fragment.ProfileFragment"
+        android:label="Second Fragment"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_secondFragment_to_homeFragment"
+            app:destination="@id/resHomeFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+    </fragment>
+</navigation>

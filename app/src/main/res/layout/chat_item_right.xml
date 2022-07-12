@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="6dp">
+
+    <RelativeLayout
+        android:id="@+id/chatitemwidth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userimg_icon"
+            style="@style/chatimagehome"
+            app:cardElevation="1sp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/userimg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/messageshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hello what do you do "
+            android:background="@drawable/bg_round1"
+            android:textSize="14dp"
+            android:fontFamily="@font/rubik"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

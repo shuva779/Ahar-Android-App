@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Aahar/Free Food</string>
+    <string name="map_key">AIzaSyAYwmSXbLr-AiDIJI2YbC3a85Wf9hncXg0</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">change kora lagbe</string>
+    <string name="fb_login_protocol_scheme">change kora lagbe</string>
+    <string name="reset_password_msg">Enter your registered email below.  </string>
+    <string name="reset_password_msg1">we will send your RESET link via Email.</string>
+</resources>

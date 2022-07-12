@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "580802218482",
+    "firebase_url": "https://ahar-project-299-default-rtdb.firebaseio.com",
+    "project_id": "ahar-project-299",
+    "storage_bucket": "ahar-project-299.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580802218482:android:0369d41a8fdd1b14dcc36b",
+        "android_client_info": {
+          "package_name": "com.example.ahar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580802218482-srtkr0l71eq4n1c8u459cmivfgke9o37.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ahar",
+            "certificate_hash": "6dff9f07f94305e23beab4f6e989d91d86dbf756"
+          }
+        },
+        {
+          "client_id": "580802218482-innlcmavmlloq1vjacr9iidvi9ni1c04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxVn3utmkiD-fp-cxXrFd8GQF-o-mvY2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580802218482-innlcmavmlloq1vjacr9iidvi9ni1c04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

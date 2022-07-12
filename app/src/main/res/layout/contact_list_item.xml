@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userimg_icon"
+        style="@style/chatimagehome"
+        app:cardElevation="1sp">
+
+        <ImageView
+            android:id="@+id/userimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_avater"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/contactlistusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Istiak Saif"
+        android:textSize="16dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/dark"
+        android:maxLines="1"
+        android:padding="2dp"
+        android:layout_toRightOf="@+id/userimg_icon"
+        android:layout_toEndOf="@+id/userimg_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/userimg_icon"
+        android:background="@color/white_redis"
+        android:layout_toRightOf="@+id/userimg_icon"/>
+</RelativeLayout>
